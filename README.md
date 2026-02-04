@@ -81,6 +81,8 @@ functionName = fn<GenericType>[parameter: Type]: ReturnType {
 - `fn[type: Type]` automatically means it is a "method" of the type
 - Can use other fields in the type and can be used by `Type.fn`
 - Similarly, `varname = var[type: Type]{...}` creates an object with type-specific access
+### class  trait(interface)
+- `ClassName:Interface`just like object：Class
 
 ## 4. Statement Syntax
 
