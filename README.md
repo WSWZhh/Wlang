@@ -42,10 +42,10 @@ functionName = fn(parameter1: Type, parameter2: Type): ReturnType {
 
 ### 2.2  Function Syntax with Compile-time Class Parameter
 ```language
-functionName = fn[ClassName](parameter: Type): ReturnType {
+functionName = fn[ClassName](parameter: Type)=>returnObj: ReturnType {
     // function body with class-specific usage
     // statements
-    return value
+   
 }
 ```
 
