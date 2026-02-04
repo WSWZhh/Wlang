@@ -63,7 +63,6 @@ functionName = fn<GenericType>[parameter: Type]: ReturnType {
 ### 3.1 Basic Types
 - `class` - Class definition
 - `fn` - Function type
-- Built-in types: `Request`, `Response`, `Filter`, `Proxy`
 
 ### 3.2 Type Parameters in Angle Brackets `<>`
 **Meaning**: Type parameter configuration at compile time
