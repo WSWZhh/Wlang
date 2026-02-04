@@ -114,17 +114,17 @@ ServiceClass = class {
 
 ### 5.2 Function Definition with Compile-time Class
 ```language
-processRequest = fn[service: ServiceClass](request: Request): Response {
-    service.firstFilter.edit(request)
-    response = service.serviceProxy.send(request)
-    service.secondFilter.edit(request, response)
+ServiceClass::processRequest = fn(request: Request): Response {
+    firstFilter.edit(request)
+    response = this.serviceProxy.send(request)
+    this.secondFilter.edit(request, response)
     return response
 }
 ```
 
-### 5.3 Compile-time Class Type(like inheritance in OOP) 
+### 5.3 Compile-time Class Type(like inheritance in OOP，作用域) 
 ```language
-ExtendedService = class[baseService: ServiceClass](customFilter1: Filter, customFilter2: Filter) {
+ExtendedService = class<baseService:>  ServiceClass](customFilter1: Filter, customFilter2: Filter) {
     baseService.firstFilter = customFilter1
     baseService.secondFilter = customFilter2
 }
