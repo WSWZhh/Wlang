@@ -44,7 +44,7 @@ functionName = fn(parameter1: Type, parameter2: Type): ReturnType {
 ```language
 functionName = fn[ClassName](parameter: Type)=>returnObj: ReturnType {
     // function body with class-specific usage
-    // statements
+    // statements√
    
 }
 ```
