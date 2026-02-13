@@ -12,6 +12,7 @@ StructureName = class {
 ```
 
 ### 1.2  Compile-time Class Creation Syntax
+//td  no
 ```language
 StructureName = class[ClassName](parameter1: Type, parameter2: Type) {
     // field assignments using parameters
@@ -78,9 +79,11 @@ functionName = fn<GenericType>[parameter: Type]: ReturnType {
 - Example: `handleRequest = fn[service: ServiceClass]` - function uses service object
 
 ### 3.4 Methods and Object Access
-- `fn[type: Type]` automatically means it is a "method" of the type
+
+- fn()
+- `fn(type: Type.)` automatically means it is a "method" of the type
 - Can use other fields in the type and can be used by `Type.fn`
-- Similarly, `varname = var[type: Type]{...}` creates an object with type-specific access
+-？  Similarly, `varname = var(type: Type. ,...)` useful？ ，creates an object with type-specific access
 ### class  trait(interface)
 - `ClassName:Interface`just like object：Class
 
@@ -105,11 +108,11 @@ variableName = expression
 
 ### 5.1 Class Definition
 ```language
-ServiceClass = class {
+ServiceClass = class (
     firstFilter: Filter
     secondFilter: Filter
     serviceProxy: Proxy = Proxy()
-}
+)
 ```
 
 ### 5.2 Function Definition with Compile-time Class
